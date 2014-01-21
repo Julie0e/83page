@@ -59,7 +59,7 @@
 {
     NSString *serviceType = SLServiceTypeFacebook;
     SLRequestMethod method = SLRequestMethodGET;
-    NSURL *url = [NSURL URLWithString:@"http://graph.facebook.com/me"];
+    NSURL *url = [NSURL URLWithString:@"https://graph.facebook.com/me"];
     
     NSDictionary *param = @{@"fields":@"picture,name,about,gender,link,updated_time"};
     SLRequest *request = [SLRequest requestForServiceType:serviceType requestMethod:method URL:url parameters:param];
